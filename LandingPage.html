@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <h3 class="nav-logo">ngab shop</h3>
+            <ul>
+                <li><a href="#wlc">Home</a></li>
+                <li><a href="#cta-shoe3">3D Shoes</a></li>
+                <li><a href="#sale">Product</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+             </div>
+        </nav>
+    
+    <main>
+    <div class="container">
+        <section class="hero">
+      <div class="welcome" id="wlc">Ngab Shop</div>
+      <p>A Shoe Shop For Everyone Who Like Shoe 👆😎</p>
+    </section>
+  </header>
+  
+      <div class="cta" id="cta-shoe3">
+        <model-viewer src="assets/scene.gltf" camera-controls
+          camera-orbit="45deg 50deg" disable-zoom auto-rotate
+          shadow-intensity="1"><h3 class="model-3d">3D Shoes Model</h3><p>Try to Rotate it</p></model-viewer>
+      </div>
+
+      <div class="animation area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="newBox" id="newBox">
+        <div class="productBox" id="productBox1">
+          <img src="assets/nike1.png" alt=""/>
+          <div class="titleBox">Nike Sport One</div>
+          <div class="descriptionBox">Best Shoes You'll Ever Had</div>
+          <a href="" id="close" onclick="close(1)">Close</a>
+        </div>
+        <div class="productBox" id="productBox2">
+          <img src="assets/nike2.png" alt=""/>
+          <div class="titleBox">Nike Vulgar Two</div>
+          <div class="descriptionBox">Comfort is in your feet</div>
+          <a href="" id="close" onclick="close(2)">Close</a>
+        </div>
+        <div class="productBox" id="productBox3">
+          <img src="assets/nike3.png" alt=""/>
+          <div class="titleBox">Nike GoodToGo</div>
+          <div class="descriptionBox">Running Like A Thief</div>
+          <a href="" id="close" onclick="close(3)">Close</a>
+        </div>
+        <div class="productBox" id="productBox4">
+          <img src="assets/nike4.png" alt=""/>
+          <div class="titleBox">Nike Suede</div>
+          <div class="descriptionBox">Wanna Feel Better? Use This!</div>
+          <a href="" id="close" onclick="close(4)">Close</a>
+        </div>
+        <div class="productBox" id="productBox5">
+          <img src="assets/nike5.png" alt=""/>
+          <div class="titleBox">Nike Goals</div>
+          <div class="descriptionBox">Achieve Your Goals With This</div>
+          <a href="" id="close" onclick="close(5)">Close</a>
+        </div>
+        <div class="productBox" id="productBox6">
+          <img src="assets/nike6.png" alt=""/>
+          <div class="titleBox">Nike Fredom</div>
+          <div class="descriptionBox">Vale: "As Free As The Wind".</div>
+          <a href="" id="close" onclick="close(6)">Close</a>
+        </div>
+      </div>
+      <div id="sale">
+        <h1>OUR SHOE FOR SALE</h1>
+        <p>Take A Look At This Fantastic Shoe👌<br>psstt.. Hover the image</p>
+      </div>
+      <div class="wrapper" id="wrapper">
+        <div class="card">
+          <div class="product" id="product1" onclick="getDetail(1)">
+            <img src="assets/nike1.png" alt="" class="high"/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike Sport One</div>
+            <div class="description">$5</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product2" onclick="getDetail(2)">
+            <img src="assets/nike2.png" alt=""/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike Vulgar Two</div>
+            <div class="description">$7</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product3" onclick="getDetail(3)">
+            <img src="assets/nike3.png" alt=""/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike GoodToGo</div>
+            <div class="description">$19.99</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product4" onclick="getDetail(4)">
+            <img src="assets/nike4.png" alt=""/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike Suede</div>
+            <div class="description">$10.99</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product5" onclick="getDetail(5)">
+            <img src="assets/nike5.png" alt=""/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike Goals</div>
+            <div class="description">$59.99</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="product" id="product6" onclick="getDetail(6)">
+            <img src="assets/nike6.png" alt=""/>
+          </div>
+          <div class="detail">
+            <div class="title">Nike Fredom</div>
+            <div class="description">$99.99</div>
+            <button class="btn-buy">BUY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-item">
+      <div class="top-item-wrapper">
+        <div class="top-item-row">
+          <img src="assets/nike5.png" alt="">
+          <div class="top-item-detail">
+            <h3>Nike Goals</h3>
+            <p>Best Shoes Ever that was used by Cristiano Ronaldo and Lionel
+              Messi</p>
+              <p>You like our shoes?<br> Buy One or more pair, you wont regret it 😁</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+<footer id="contact">
+  <section class="ft-container">
+    <div class="ft-logo">
+      <a href="https://github.com/Marco-andana" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/marcoandana36/?hl=id" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://codepen.io/your-work/" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+    </div>
+    <div class="copyright">&copy; Created by Marco Andana</div>
+  </section>
+</footer>
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      <script src="https://kit.fontawesome.com/afb5fbdd6d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
