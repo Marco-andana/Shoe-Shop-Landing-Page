@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald&family=Roboto+Slab&family=Roboto:wght@900&family=Rubik&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
+    <div id="preloader"></div>
     <header>
         <nav>
             <h3 class="nav-logo">ngab shop</h3>
             <ul>
                 <li><a href="#wlc">Home</a></li>
-                <li><a href="#cta-shoe3">3D Shoes</a></li>
+                <li><a href="#sorteh">Color</a></li>
                 <li><a href="#sale">Product</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -28,18 +33,32 @@
     <main>
     <div class="container">
         <section class="hero">
-      <div class="welcome" id="wlc">Ngab Shop</div>
-      <p>A Shoe Shop For Everyone Who Like Shoe 👆😎</p>
+          <div class="svg-header">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="pink" fill-opacity="0.7" d="M0,32L48,26.7C96,21,192,11,288,10.7C384,11,480,21,576,58.7C672,96,768,160,864,208C960,256,1056,288,1152,256C1248,224,1344,128,1392,80L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg></div>
+          <div class="h-text">
+          <div class="welcome" id="wlc" data-aos="fade-up" data-aos-duration="1000"
+           data-aos-once="true">Ngab Shop<br>Nike Shoe<br>Super Cool</div>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">A Shoe Shop For Everyone Who Like Shoe 👆😎</p>
+      <img class="hero-nike" src="assets/nike1.png" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="400"/>
+      <h1 class="air-bg" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">AIR</h1>
+      <hr>
+      <div class="head-info" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+        <p><span class="brand-title">Model</span><br>Super Cool Nike Air</p>
+        <p><span class="brand-title">Brand</span><br>Nike</p>
+        <p><span class="brand-title">Colors</span><br>Grape Blue</p>
+        <p><span class="brand-title">Price</span><br>Rp.499.999</p>
+      </div>
+    </div>
+    
     </section>
-  </header>
-  
-      <div class="cta" id="cta-shoe3">
+          </header>
+      <!-- <div class="cta" id="cta-shoe3">
         <model-viewer src="assets/scene.gltf" camera-controls
           camera-orbit="45deg 50deg" disable-zoom auto-rotate
           shadow-intensity="1"><h3 class="model-3d">3D Shoes Model</h3><p>Try to Rotate it</p></model-viewer>
-      </div>
+      </div> -->
 
-      <div class="animation area">
+      <div class="animation area" id="sorteh">
         <ul class="box-area">
           <li></li>
           <li></li>
@@ -49,7 +68,31 @@
           <li></li>
         </ul>
       </div>
-
+        <div class="sort-container">
+        <div class="sort-wrapper">
+        <div class="sort-card green-card" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true">
+          <img class="green-nike" src="assets/nike4.png" alt=""/>
+          <div class="color-detail">
+          <h3 class="color-title">Green Nike</h3>
+          <button class="btn-color">Shop Now ></button>
+        </div>
+        </div>
+        <div class="sort-card red-card" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="150">
+          <img class="red-nike" src="assets/nike-red.png" alt="" />
+          <div class="color-detail">
+          <h3 class="color-title">Red Nike</h3>
+          <button class="btn-color">Shop Now ></button>
+        </div>
+        </div>
+        <div class="sort-card blue-card" data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="250">
+          <img class="blue-nike" src="assets/nike-blue.png" alt="" />
+          <div class="color-detail">
+          <h3 class="color-title">Blue Nike</h3>
+          <button class="btn-color">Shop Now ></button>
+        </div>
+        </div>
+        </div>
+      </div>
       <div class="newBox" id="newBox">
         <div class="productBox" id="productBox1">
           <img src="assets/nike1.png" alt=""/>
@@ -88,19 +131,25 @@
           <a href="" id="close" onclick="close(6)">Close</a>
         </div>
       </div>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F8EDE3" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,181.3C384,203,480,213,576,192C672,171,768,117,864,117.3C960,117,1056,171,1152,170.7C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <div id="sale">
-        <h1>OUR SHOE FOR SALE</h1>
-        <p>Take A Look At This Fantastic Shoe👌<br>psstt.. Hover the image</p>
+        <h1 data-aos="fade-up" data-aos-once="true">OUR SHOE FOR SALE</h1>
+        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="200">Take A Look At This Fantastic Shoe👌</p>
       </div>
-      <div class="wrapper" id="wrapper">
+      <div class="wrapper" id="wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <div class="card">
           <div class="product" id="product1" onclick="getDetail(1)">
-            <img src="assets/nike1.png" alt="" class="high"/>
+            <img src="assets/nike1.png" alt=""/>
           </div>
           <div class="detail">
             <div class="title">Nike Sport One</div>
             <div class="description">$5</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+            <div class="color-logo1"></div>
+            <div class="color-logo2"></div>
+          </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -110,7 +159,11 @@
           <div class="detail">
             <div class="title">Nike Vulgar Two</div>
             <div class="description">$7</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+              <div class="color-logo3"></div>
+              <div class="color-logo4"></div>
+            </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -120,7 +173,11 @@
           <div class="detail">
             <div class="title">Nike GoodToGo</div>
             <div class="description">$19.99</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+              <div class="color-logo5"></div>
+              <div class="color-logo6"></div>
+            </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -130,7 +187,11 @@
           <div class="detail">
             <div class="title">Nike Suede</div>
             <div class="description">$10.99</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+              <div class="color-logo7"></div>
+              <div class="color-logo8"></div>
+            </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -140,7 +201,11 @@
           <div class="detail">
             <div class="title">Nike Goals</div>
             <div class="description">$59.99</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+              <div class="color-logo9"></div>
+              <div class="color-logo10"></div>
+            </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
         <div class="card">
@@ -150,14 +215,19 @@
           <div class="detail">
             <div class="title">Nike Fredom</div>
             <div class="description">$99.99</div>
-            <button class="btn-buy">BUY</button>
+            <div class="color-wrapper">
+              <div class="color-logo11"></div>
+              <div class="color-logo12"></div>
+            </div>
+            <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Add to cart</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="top-item">
+    <!-- <div class="top-item">
       <div class="top-item-wrapper">
+        <h2 class="feature-title">Featured products from our shop</h2>
         <div class="top-item-row">
           <img src="assets/nike5.png" alt="">
           <div class="top-item-detail">
@@ -168,7 +238,54 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div id="slider" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2" checked>
+      <input type="radio" name="slider" id="slide3" checked>
+      <input type="radio" name="slider" id="slide4" checked>
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <img src="assets/slide-4.jpg" />
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <img src="assets/slide-1.jpg">
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <img src="assets/slide-2.jpg">
+              </div>
+            </div>
+             <div class="slide slide_4">
+              <div class="slide-content">
+                <img src="assets/slide-3.jpg">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+      </div>
     </div>
+
 </main>
 <footer id="contact">
   <section class="ft-container">
@@ -183,6 +300,10 @@
     <script type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
       <script src="https://kit.fontawesome.com/afb5fbdd6d.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script src="script.js"></script>
   </body>
 </html>
