@@ -4,6 +4,7 @@ const wrapper = document.getElementById("wrapper");
 const newBox = document.getElementById("newBox");
 const sale = document.getElementById("sale");
 const cta = document.querySelector('.cta');
+const sort = document.querySelector('.sort-container');
 const productBox1 = document.getElementById("productBox1");
 const productBox2 = document.getElementById("productBox2");
 const productBox3 = document.getElementById("productBox3");
@@ -22,7 +23,8 @@ function getDetail(nomor) {
   newBox.style.display = "block"
   wrapper.style.display = "none"
   sale.style.display = "none"
-  cta.style.display = "none"
+  // cta.style.display = "none"
+  sort.style.display = "none"
 
 if (nomor === 1) {
   productBox1.style.display = "flex"
@@ -50,4 +52,8 @@ menuToggle.addEventListener('click', function() {
     modelViewer.classList.toggle('unactive');
 });
 
+let loader = document.getElementById('preloader');
 
+window.addEventListener('load', function() {
+  loader.style.display = "none";
+});
